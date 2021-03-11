@@ -1,2 +1,2 @@
 # SoftUni-Homework
-My SoftUni homeworks from all modules
+My SoftUni homework from all modules
