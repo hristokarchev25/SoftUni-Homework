@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Auth</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="file-config.js"></script>
+</head>
+
+<body>
+    <form id="registerForm">
+        <h2><b>Welcome to my Homework</b></h2>
+        <h3>Please, first, sign up then use the form below to log in!</h3>
+        <h4>*If you are already part of my datebase use only the log in form</h4>
+        <div class="container">
+            <label for="email"><b>Email</b></label>
+            <input id="emailInput" type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input id="passwordInput" type="password" placeholder="Enter Password" name="psw" required>
+
+            <button id="signUp" type="signUp">Sign up</button>
+        </div>
+    </form>
+    <br>
+    <form id="loginForm">
+        <h2 id="loginH2"><b>Now lets log in</b></h2>
+        <h3 id="loginH3">Almost there</h3>
+        <h4>*After successful login, a link with text "Go" must show. With him you will be able to see my "Books" Homework</h4>
+        <div class="container">
+            <label for="email"><b>Email</b></label>
+            <input id="emailLoginInput" type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input id="passwordLoginInput" type="password" placeholder="Enter Password" name="psw" required>
+
+            <button id="loginBtn" type="login">Log in</button>
+        </div>
+    </form>
+    <br>
+    <a id="verified" href="./index1.html">Go</a>
+    <script src="auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  <script>
+        fetch('https://swapi.dev/api/people/1')
+            .then(res => res.json())
+            .then(character => {
+                return fetch(character.starships[0])
+            })
+            .then(res => res.json())
+            .then(starship => console.log(starship))
+            .catch(err => {
+                console.log('catch');
+            });
+    </script> -->
+    <script>
+        async function getSwName(id) {
+            let response = await fetch(`https://swapi.dev/api/people/${id}`);
+            let character = await response.json();
+
+            let starshipResponse = await fetch(character.starships[0]);
+            let starship = await starshipResponse.json();
+
+            return `${character.name} -> ${starship.name}`;
+        }
+        getSwName(1)
+            .then(name => console.log(name))
+            .catch(err => {
+                console.log('gotchaaa');
+                console.log(err);
+            });
+    </script>
+</body>
+
+</html>
