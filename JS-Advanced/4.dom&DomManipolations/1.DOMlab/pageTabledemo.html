@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let ulElement = document.createElement('ul');
+    let firstLi = document.createElement('li');
+    firstLi.innerHTML = "<b>Ico</b>";
+    ulElement.appendChild(firstLi);
+    let secondLi = document.createElement('li');
+    secondLi.textContent = "Niki";
+    ulElement.appendChild(secondLi);
+    let thirdLi = document.createElement('li');
+    thirdLi.innerHTML = "<b>Toni</b>";
+    ulElement.prepend(thirdLi);
+    document.body.appendChild(ulElement);
+</script>
+<script>
+    let table = document.createElement("table");
+    let firstTr = document.createElement('tr');
+    let firstTh = document.createElement('th');
+    firstTh.innerHTML = "<b>First Name</b>";
+    firstTr.appendChild(firstTh);
+    let secondTh = document.createElement('th');
+    secondTh.innerHTML = "<b>Second Name</b>";
+    firstTr.appendChild(secondTh);
+    table.appendChild(firstTr);
+    let secondTr = document.createElement('tr');
+    let firstTd = document.createElement('td');
+    firstTd.textContent = "Hristo";
+    secondTr.appendChild(firstTd);
+    let secondTd = document.createElement('td');
+    secondTd.textContent = "Karchev";
+    secondTr.appendChild(secondTd);
+    table.appendChild(secondTr);
+
+    let thirdTr = document.createElement('tr');
+    let thirdTd = document.createElement('td');
+    thirdTd.textContent = "Niki";
+    thirdTr.appendChild(thirdTd);
+    let fourthTd = document.createElement('td');
+    fourthTd.textContent = "Baltov";
+    thirdTr.appendChild(fourthTd);
+    table.appendChild(thirdTr);
+    document.body.appendChild(table);
+</script>
+</html>
