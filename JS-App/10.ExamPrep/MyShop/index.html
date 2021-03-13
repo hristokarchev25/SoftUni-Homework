@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./public/styles.css" />
+  <link rel="icon" type="image/png" href="./public/favicon.png" />
+  <title>Shoe Shelf</title>
+</head>
+
+<body>
+
+  <main id="root"></main>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script>
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyBKaWXyII0Qjq5O_A0K5-ZbEaAjLDw_77E",
+      authDomain: "shoes-workshop.firebaseapp.com",
+      databaseURL: "https://shoes-workshop.firebaseio.com",
+      projectId: "shoes-workshop",
+      storageBucket: "shoes-workshop.appspot.com",
+      messagingSenderId: "968617542663",
+      appId: "1:968617542663:web:62bc7a6203d464b3da96a2"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
