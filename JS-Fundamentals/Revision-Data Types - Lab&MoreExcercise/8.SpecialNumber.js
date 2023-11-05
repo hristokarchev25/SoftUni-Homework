@@ -15,3 +15,21 @@ function solve(num) {
     }
 }
 solve(15);
+
+
+function solve(rangeNumber) {
+
+    for (let index = 1; index <= rangeNumber; index++) {
+        let sum = 0;
+        index.toString().split('').map((t) => sum += Number(t));
+        console.log(`${index} -> ${checkIfNumSpecial(sum)}`);
+    }
+
+    function checkIfNumSpecial(numToCheck) {
+        if (numToCheck === 5 || numToCheck === 7 || numToCheck === 11) {
+            return "True";
+        } else {
+            return "False";
+        }
+    }
+}
